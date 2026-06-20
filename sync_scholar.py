@@ -108,7 +108,19 @@ def fetch_recent():
     if key:
         print("Fetching via SerpAPI...")
         return fetch_serpapi(key)
-    print("No SERPAPI_API_KEY set; falling back to scholarly (may be blocked in CI)...")
+
+    # In CI, scholarly is blocked by Google Scholar, so fail with a clear message
+    # instead of an opaque MaxTriesExceededException stack trace.
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        sys.exit(
+            "SERPAPI_API_KEY is not set. Google Scholar blocks GitHub Actions IPs, "
+            "so the scholarly fallback cannot work here.\n"
+            "Add the secret: repo Settings -> Secrets and variables -> Actions -> "
+            "New repository secret, name it SERPAPI_API_KEY, then start a NEW run "
+            "via the Run workflow button (do not re-run the old failed run)."
+        )
+
+    print("No SERPAPI_API_KEY set; falling back to scholarly (local use only)...")
     try:
         return fetch_scholarly()
     except ImportError:

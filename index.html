@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recent Publications — CSDL</title>
+  <meta name="description" content="Recent publications, synced from Google Scholar.">
+  <style>
+    :root {
+      --ink:#1a1a1a; --ink-soft:#4a4a4a; --ink-faint:#767676;
+      --rule:#e2e0db; --accent:#5a1a1a; --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+      --serif:Georgia,"Times New Roman",serif;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; background:transparent; color:var(--ink); font-family:var(--serif); line-height:1.6; }
+    .wrap { max-width:820px; margin:0 auto; padding:16px 20px 24px; }
+    h2 { font-size:1.3rem; font-weight:600; margin:0 0 .2em; }
+    .sub { font-family:var(--sans); font-size:.82rem; color:var(--ink-faint); margin:0 0 1.2em; }
+    ol { list-style:none; counter-reset:pub; margin:0; padding:0; }
+    li { position:relative; padding:.65em 0 .65em 2.4em; border-bottom:1px solid var(--rule); font-size:.97rem; color:var(--ink-soft); }
+    li:last-child { border-bottom:0; }
+    li::before { counter-increment:pub; content:counter(pub); position:absolute; left:0; top:.7em; width:1.8em; text-align:right; padding-right:.7em; font-family:var(--sans); font-size:.78rem; color:var(--ink-faint); }
+    .title { color:var(--ink); }
+    .authors { font-family:var(--sans); font-size:.84rem; color:var(--ink-faint); }
+    .venue { font-style:italic; }
+    .year { font-family:var(--sans); font-size:.82rem; color:var(--ink-faint); }
+    a.more { font-family:var(--sans); font-size:.85rem; color:var(--accent); }
+    a.ext { font-family:var(--sans); font-size:.78rem; text-transform:uppercase; letter-spacing:.04em; color:var(--accent); text-decoration:none; }
+    a.ext:hover { text-decoration:underline; }
+    .foot { margin-top:1.2em; font-family:var(--sans); font-size:.85rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h2>Recent Publications</h2>
+    <p class="sub" id="sub">Synced from Google Scholar</p>
+    <ol id="list"><li style="padding-left:0">Loading&hellip;</li></ol>
+    <p class="foot"><a class="more" id="scholar" href="https://scholar.google.com/citations?hl=en&user=bRzhctsAAAAJ">View the full list on Google Scholar &rarr;</a></p>
+  </div>
+
+  <script>
+    (function () {
+      var listEl = document.getElementById("list");
+      function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+      function emph(a,me){var s=esc(a);return me?s.replace(esc(me),"<strong>"+esc(me)+"</strong>"):s;}
+
+      fetch("publications.json", { cache: "no-cache" })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (d) {
+          if (d.profileUrl) document.getElementById("scholar").href = d.profileUrl;
+          if (d.lastSynced) document.getElementById("sub").textContent =
+            "Synced from Google Scholar · last updated " + d.lastSynced;
+          listEl.innerHTML = "";
+          (d.publications || []).forEach(function (p) {
+            var ext = p.url ? ' <a class="ext" href="' + esc(p.url) + '">link</a>' : "";
+            var li = document.createElement("li");
+            li.innerHTML =
+              '<span class="title">' + esc(p.title) + "</span> " +
+              '<span class="year">(' + esc(p.year) + ")</span><br>" +
+              '<span class="authors">' + emph(p.authors, d.author) + "</span><br>" +
+              '<span class="venue">' + esc(p.venue) + "</span>" + ext;
+            listEl.appendChild(li);
+          });
+        })
+        .catch(function (e) {
+          listEl.innerHTML = '<li style="padding-left:0">Could not load publications. ' +
+            'See <a href="https://scholar.google.com/citations?hl=en&user=bRzhctsAAAAJ">Google Scholar</a>.</li>';
+          console.error(e);
+        });
+    })();
+  </script>
+</body>
+</html>

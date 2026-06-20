@@ -1,75 +1,75 @@
 {
   "profileUrl": "https://scholar.google.com/citations?hl=en&user=bRzhctsAAAAJ",
-  "lastSynced": "2026-06-19",
+  "lastSynced": "2026-06-20",
   "author": "A Renganathan",
   "publications": [
     {
       "title": "REMAL: Residual Equilibrium Manifold Active Learning for Surrogate-Based Multidisciplinary Design Analysis",
       "authors": "K Yuan, A Renganathan",
-      "venue": "arXiv preprint arXiv:2606.13245",
+      "venue": "arXiv preprint arXiv:2606.13245, 2026",
       "year": "2026",
       "url": "https://arxiv.org/abs/2606.13245"
     },
     {
       "title": "Derivative-free optimization is competitive for aerodynamic design optimization in moderate dimensions",
       "authors": "P Plaban, P Bachman, A Renganathan",
-      "venue": "Structural and Multidisciplinary Optimization 69 (6), 154",
+      "venue": "Structural and Multidisciplinary Optimization 69 (6), 154, 2026",
       "year": "2026",
       "url": ""
     },
     {
       "title": "Surrogate-Guided Adaptive Importance Sampling for Failure Probability Estimation",
       "authors": "A Renganathan, AS Booth",
-      "venue": "arXiv preprint arXiv:2603.20959",
+      "venue": "arXiv preprint arXiv:2603.20959, 2026",
       "year": "2026",
       "url": "https://arxiv.org/abs/2603.20959"
     },
     {
       "title": "Convolutional regularized least squares framework for reduced-order modeling of transonic flows",
       "authors": "M Bilal, A Renganathan",
-      "venue": "Physics of Fluids 38 (3)",
+      "venue": "Physics of Fluids 38 (3), 2026",
       "year": "2026",
       "url": ""
     },
     {
       "title": "Adaptive Multitask Gaussian Process Surrogate Models for Supersonic Fluid-Structure Interactions",
       "authors": "S Adhikary, V Narayanaswamy, A Renganathan",
-      "venue": "AIAA AVIATION 2026 Forum, 4781",
+      "venue": "AIAA AVIATION 2026 Forum, 4781, 2026",
       "year": "2026",
       "url": ""
     },
     {
       "title": "A Bayesian Approach to Multiobjective Aerodynamic Shape Optimization",
       "authors": "P Bachman, K Carlson, A Renganathan",
-      "venue": "AIAA SCITECH 2026 Forum, 0367",
+      "venue": "AIAA SCITECH 2026 Forum, 0367, 2026",
       "year": "2026",
       "url": ""
     },
     {
       "title": "An Efficient Parametric Reduced Basis Method to Emulate Fluid Flow with Shocks",
       "authors": "M Bilal, K Sethunarayanan, A Renganathan",
-      "venue": "AIAA SCITECH 2026 Forum, 2404",
+      "venue": "AIAA SCITECH 2026 Forum, 2404, 2026",
       "year": "2026",
       "url": ""
     },
     {
       "title": "Uncertainty Quantification via Latent Gaussian Process Surrogates for the Second AIAA Fluid Dynamics UQ Challenge Problem",
       "authors": "G Davis, A Renganathan",
-      "venue": "AIAA SCITECH 2026 Forum, 0095",
+      "venue": "AIAA SCITECH 2026 Forum, 0095, 2026",
       "year": "2026",
       "url": ""
     },
     {
-      "title": "Convolutional Regularized Least Squares Framework for Reduced Order Modeling of Transonic Flows",
+      "title": ": Convolutional Regularized Least Squares Framework for Reduced Order Modeling of Transonic Flows",
       "authors": "M Bilal, A Renganathan",
-      "venue": "arXiv preprint arXiv:2511.21425",
+      "venue": "arXiv preprint arXiv:2511.21425, 2025",
       "year": "2025",
       "url": "https://arxiv.org/abs/2511.21425"
     },
     {
       "title": "Multiobjective aerodynamic design optimization of the NASA common research model",
       "authors": "K Carlson, A Renganathan",
-      "venue": "Aerospace Science and Technology, 111120",
+      "venue": "Aerospace Science and Technology, 111120, 2025",
       "year": "2025",
       "url": ""
     }

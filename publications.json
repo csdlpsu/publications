@@ -1,8 +1,15 @@
 {
   "profileUrl": "https://scholar.google.com/citations?hl=en&user=bRzhctsAAAAJ",
-  "lastSynced": "2026-06-29",
+  "lastSynced": "2026-07-06",
   "author": "A Renganathan",
   "publications": [
+    {
+      "title": "A Bayesian latent Gaussian process framework for aerodynamic uncertainty quantification",
+      "authors": "G Davis, A Renganathan",
+      "venue": "arXiv preprint arXiv:2606.28871, 2026",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2606.28871"
+    },
     {
       "title": "REMAL: Residual Equilibrium Manifold Active Learning for Surrogate-Based Multidisciplinary Design Analysis",
       "authors": "K Yuan, A Renganathan",
@@ -65,13 +72,6 @@
       "venue": "arXiv preprint arXiv:2511.21425, 2025",
       "year": "2025",
       "url": "https://arxiv.org/abs/2511.21425"
-    },
-    {
-      "title": "Multiobjective aerodynamic design optimization of the NASA common research model",
-      "authors": "K Carlson, A Renganathan",
-      "venue": "Aerospace Science and Technology, 111120, 2025",
-      "year": "2025",
-      "url": ""
     }
   ]
 }

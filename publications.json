@@ -1,8 +1,15 @@
 {
   "profileUrl": "https://scholar.google.com/citations?hl=en&user=bRzhctsAAAAJ",
-  "lastSynced": "2026-09-21",
+  "lastSynced": "2026-09-28",
   "author": "A Renganathan",
   "publications": [
+    {
+      "title": "qPOTS: A Python Package for Sample-efficient Batch Constrained Multiobjective Bayesian Optimization",
+      "authors": "A Renganathan, PE Bachman, KE Carlson",
+      "venue": "Journal of Open Source Software 11 (125), 10867, 2026",
+      "year": "2026",
+      "url": ""
+    },
     {
       "title": "A Bayesian latent Gaussian process framework for aerodynamic uncertainty quantification",
       "authors": "G Davis, A Renganathan",
@@ -65,13 +72,6 @@
       "venue": "AIAA SCITECH 2026 Forum, 0095, 2026",
       "year": "2026",
       "url": ""
-    },
-    {
-      "title": ": Convolutional Regularized Least Squares Framework for Reduced Order Modeling of Transonic Flows",
-      "authors": "M Bilal, A Renganathan",
-      "venue": "arXiv preprint arXiv:2511.21425, 2025",
-      "year": "2025",
-      "url": "https://arxiv.org/abs/2511.21425"
     }
   ]
 }

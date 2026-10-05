@@ -1,8 +1,15 @@
 {
   "profileUrl": "https://scholar.google.com/citations?hl=en&user=bRzhctsAAAAJ",
-  "lastSynced": "2026-09-28",
+  "lastSynced": "2026-10-05",
   "author": "A Renganathan",
   "publications": [
+    {
+      "title": "Learning What to Evaluate: Correlation-Aware Decoupling for Multiobjective Bayesian Optimization",
+      "authors": "A Renganathan, P Bachman",
+      "venue": "arXiv preprint arXiv:2609.32632, 2026",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2609.32632"
+    },
     {
       "title": "qPOTS: A Python Package for Sample-efficient Batch Constrained Multiobjective Bayesian Optimization",
       "authors": "A Renganathan, PE Bachman, KE Carlson",
@@ -63,13 +70,6 @@
       "title": "An Efficient Parametric Reduced Basis Method to Emulate Fluid Flow with Shocks",
       "authors": "M Bilal, K Sethunarayanan, A Renganathan",
       "venue": "AIAA SCITECH 2026 Forum, 2404, 2026",
-      "year": "2026",
-      "url": ""
-    },
-    {
-      "title": "Uncertainty Quantification via Latent Gaussian Process Surrogates for the Second AIAA Fluid Dynamics UQ Challenge Problem",
-      "authors": "G Davis, A Renganathan",
-      "venue": "AIAA SCITECH 2026 Forum, 0095, 2026",
       "year": "2026",
       "url": ""
     }
